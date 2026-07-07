@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>لوحة التحكم | إبداع ويب</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        :root {
+            --primary-gold: #d4af37;
+            --dark-bg: #111111;
+            --card-bg: #1a1a1a;
+            --text-color: #ffffff;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--dark-bg);
+            color: var(--text-color);
+            margin: 0;
+            padding: 20px;
+        }
+        .admin-container {
+            max-width: 1000px;
+            margin: 0 auto;
+            background: var(--card-bg);
+            padding: 30px;
+            border-radius: 12px;
+            border: 1px solid #222;
+            box-shadow: 0 8px 24px rgba(0,0,0,0.5);
+        }
+        h1, h2 {
+            color: var(--primary-gold);
+            border-bottom: 2px solid #222;
+            padding-bottom: 10px;
+        }
+        .form-group {
+            margin-bottom: 20px;
+        }
+        label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: bold;
+        }
+        input[type="text"], textarea {
+            width: 100%;
+            padding: 12px;
+            background: #222;
+            border: 1px solid #333;
+            border-radius: 6px;
+            color: #fff;
+            box-sizing: border-box;
+        }
+        input[type="text"]:focus, textarea:focus {
+            border-color: var(--primary-gold);
+            outline: none;
+        }
+        .btn-submit {
+            background-color: var(--primary-gold);
+            color: #000;
+            border: none;
+            padding: 12px 24px;
+            font-size: 16px;
+            font-weight: bold;
+            border-radius: 6px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+        .btn-submit:hover {
+            background-color: #f3cf5f;
+            transform: translateY(-2px);
+        }
+        .project-list {
+            margin-top: 40px;
+        }
+        .project-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: #222;
+            padding: 15px;
+            border-radius: 6px;
+            margin-bottom: 10px;
+            border-right: 4px solid var(--primary-gold);
+        }
+        .btn-delete {
+            background: #cc3333;
+            color: #fff;
+            border: none;
+            padding: 8px 16px;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        .btn-delete:hover {
+            background: #ff4444;
+        }
+    </style>
+</head>
+<body>
+
+<div class="admin-container">
+    <h1>لوحة تحكم المسؤول ⚙️</h1>
+    <p>مرحباً بك في نظام إدارة محتوى معرض أعمال "إبداع ويب". يمكنك إضافة أو حذف المشاريع من هنا.</p>
+    
+    <!-- فورم إضافة مشروع جديد -->
+    <section class="add-project-form">
+        <h2>إضافة مشروع جديد إلى معرض الأعمال</h2>
+        <form id="cmsForm">
+            <div class="form-group">
+                <label for="projectTitle">عنوان المشروع أو اسم العميل:</label>
+                <input type="text" id="projectTitle" placeholder="مثال: منصة تجارة إلكترونية، موقع طبي..." required>
+            </div>
+            <div class="form-group">
+                <label for="projectDesc">وصف مختصر للمشروع:</label>
+                <textarea id="projectDesc" rows="4" placeholder="اكتب تفاصيل وتقنيات المشروع هنا..." required></textarea>
+            </div>
+            <div class="form-group">
+                <label for="projectLink">رابط معاينة المشروع (اختياري):</label>
+                <input type="text" id="projectLink" placeholder="https://example.com">
+            </div>
+            <button type="submit" class="btn-submit">نشر وتحديث المعرض ✨</button>
+        </form>
+    </section>
+
+    <!-- قائمة المشاريع الحالية لإدارتها -->
+    <section class="project-list">
+        <h2>المشاريع الحالية المبرمجة</h2>
+        <div id="projectsContainer">
+            <!-- سيتم توليد المشاريع هنا تلقائياً عبر السكريبت -->
+            <div class="project-item">
+                <div>
+                    <strong>مثال: موقع شركة تنظيف</strong>
+                    <p style="margin: 5px 0 0 0; font-size: 14px; color: #aaa;">موقع تعريفي متكامل متجاوب مع الهواتف الذكية.</p>
+                </div>
+                <button class="btn-delete" onclick="alert('هذا مشروع تجريبي فقط')">حذف</button>
+            </div>
+        </div>
+    </section>
+</div>
+
+<script>
+    // نظام إدارة محلي مؤقت لحفظ البيانات واستعراضها فورياً
+    document.getElementById('cmsForm').addEventListener('submit', function(e) {
+        e.preventDefault();
+        
+        const title = document.getElementById('projectTitle').value;
+        const desc = document.getElementById('projectDesc').value;
+        
+        const container = document.getElementById('projectsContainer');
+        
+        const newItem = document.createElement('div');
+        newItem.className = 'project-item';
+        newItem.innerHTML = `
+            <div>
+                <strong>${title}</strong>
+                <p style="margin: 5px 0 0 0; font-size: 14px; color: #aaa;">${desc}</p>
+            </div>
+            <button class="btn-delete" onclick="this.parentElement.remove()">حذف</button>
+        `;
+        
+        container.appendChild(newItem);
+        
+        // إعادة تهيئة الفورم
+        document.getElementById('cmsForm').reset();
+        alert('تم إضافة المشروع إلى المعرض بنجاح! لربطه نهائياً بقاعدة البيانات، تأكد من حفظ التغييرات على غيت هاب.');
+    });
+</script>
+
+</body>
+</html>
