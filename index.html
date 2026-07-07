@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="إبداع ويب - وكالة متخصصة في تصميم وتطوير المواقع الإلكترونية الاحترافية، المتاجر الإلكترونية، وتحسين محركات البحث (SEO). ابدأ مشروعك الرقمي معنا اليوم.">
+    <title>إبداع ويب | لتصميم وتطوير المواقع الإلكترونية الاحترافية</title>
+    <!-- Google Fonts - Cairo -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Main Style CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header / Navigation -->
+    <header class="main-header">
+        <div class="container">
+            <a href="#" class="logo">
+                <span class="logo-icon"><i class="fa-solid fa-code"></i></span>
+                <span class="logo-text">إبداع<span>ويب</span></span>
+            </a>
+            
+            <nav class="nav-menu" id="navMenu">
+                <ul>
+                    <li><a href="#hero" class="nav-link active">الرئيسية</a></li>
+                    <li><a href="#services" class="nav-link">خدماتنا</a></li>
+                    <li><a href="#portfolio" class="nav-link">أعمالنا</a></li>
+                    <li><a href="#why-us" class="nav-link">لماذا نحن؟</a></li>
+                    <li><a href="#contact" class="nav-link">تواصل معنا</a></li>
+                </ul>
+            </nav>
+
+            <div class="header-actions">
+                <a href="#contact" class="btn btn-primary btn-sm header-cta">اطلب موقعك الآن</a>
+                <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="فتح القائمة">
+                    <i class="fa-solid fa-bars-staggered"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Nav Menu Overlay -->
+    <div class="mobile-nav-overlay" id="mobileNavOverlay">
+        <div class="mobile-nav-content">
+            <button class="close-menu-btn" id="closeMenuBtn"><i class="fa-solid fa-xmark"></i></button>
+            <div class="mobile-logo">
+                <i class="fa-solid fa-code"></i> إبداع<span>ويب</span>
+            </div>
+            <ul class="mobile-links">
+                <li><a href="#hero">الرئيسية</a></li>
+                <li><a href="#services">خدماتنا</a></li>
+                <li><a href="#portfolio">أعمالنا</a></li>
+                <li><a href="#why-us">لماذا نحن؟</a></li>
+                <li><a href="#contact">تواصل معنا</a></li>
+            </ul>
+            <a href="#contact" class="btn btn-primary mobile-cta">اطلب موقعك الآن</a>
+        </div>
+    </div>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="hero" class="hero-section">
+            <div class="hero-bg-shapes">
+                <div class="shape shape-1"></div>
+                <div class="shape shape-2"></div>
+                <div class="shape shape-3"></div>
+            </div>
+            <div class="container">
+                <div class="hero-content">
+                    <span class="badge">شريكك الرقمي الموثوق</span>
+                    <h1 class="hero-title">نحول أفكارك إلى <span class="gradient-text">واقع رقمي مبهر</span></h1>
+                    <p class="hero-subtitle">نحن في <strong>إبداع ويب</strong> نصمم ونطور مواقع إلكترونية عصرية، سريعة، ومتجاوبة بالكامل لتناسب هويتك التجارية وتساعدك على النمو والتميز في الفضاء الرقمي.</p>
+                    <div class="hero-buttons">
+                        <a href="#contact" class="btn btn-primary btn-lg"><i class="fa-solid fa-rocket"></i> ابدأ مشروعك الآن</a>
+                        <a href="#portfolio" class="btn btn-secondary btn-lg"><i class="fa-solid fa-briefcase"></i> شاهد أعمالنا</a>
+                    </div>
+                    <div class="hero-stats">
+                        <div class="stat-item">
+                            <span class="stat-num" data-val="50">0</span><span class="plus">+</span>
+                            <span class="stat-label">مشروع ناجح</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-num" data-val="98">0</span><span class="percent">%</span>
+                            <span class="stat-label">رضا العملاء</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-num" data-val="5">0</span><span class="plus">+</span>
+                            <span class="stat-label">سنوات خبرة</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="hero-visual">
+                    <div class="visual-card">
+                        <div class="window-header">
+                            <span class="dot red"></span>
+                            <span class="dot yellow"></span>
+                            <span class="dot green"></span>
+                            <span class="window-title">ebda3web.com</span>
+                        </div>
+                        <div class="window-body">
+                            <img src="images/hero_illustration.jpg" alt="إبداع ويب - تصميم واجهات وتطبيقات فاخرة" class="hero-mock-img">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section id="services" class="services-section">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-badge">ماذا نقدم؟</span>
+                    <h2 class="section-title">خدمات رقمية متكاملة لنمو أعمالك</h2>
+                    <p class="section-desc">نقدم حلولاً برمجية وتصميمية متطورة تغطي كافة احتياجاتك على الويب بأحدث التقنيات المعيارية.</p>
+                </div>
+                <div class="services-grid">
+                    <div class="service-card">
+                        <div class="service-icon"><i class="fa-solid fa-laptop-code"></i></div>
+                        <h3 class="service-title">تصميم مواقع تعريفية</h3>
+                        <p class="service-desc">تصميم مواقع مميزة للشركات والمؤسسات والأفراد تعكس الهوية البصرية باحترافية وتوافق تام مع الجوال.</p>
+                        <ul class="service-features">
+                            <li><i class="fa-solid fa-check"></i> واجهات جذابة وعصرية</li>
+                            <li><i class="fa-solid fa-check"></i> لوحة تحكم سهلة الاستخدام</li>
+                            <li><i class="fa-solid fa-check"></i> سرعة تصفح فائقة</li>
+                        </ul>
+                    </div>
+
+                    <div class="service-card">
+                        <div class="service-icon"><i class="fa-solid fa-store"></i></div>
+                        <h3 class="service-title">تطوير متاجر إلكترونية</h3>
+                        <p class="service-desc">بناء متاجر متكاملة لبيع منتجاتك عبر الإنترنت مع ربط بوابات الدفع وشحن المنتجات بكل سهولة وسلاسة.</p>
+                        <ul class="service-features">
+                            <li><i class="fa-solid fa-check"></i> تجربة تسوق سهلة ومثالية</li>
+                            <li><i class="fa-solid fa-check"></i> حماية وتأمين العمليات</li>
+                            <li><i class="fa-solid fa-check"></i> تقارير ومبيعات مفصلة</li>
+                        </ul>
+                    </div>
+
+                    <div class="service-card">
+                        <div class="service-icon"><i class="fa-solid fa-magnifying-glass-chart"></i></div>
+                        <h3 class="service-title">تحسين محركات البحث SEO</h3>
+                        <p class="service-desc">تهيئـة موقعك للظهور في الصفحات الأولى في محركات البحث (جوجل) لزيادة الزيارات والعملاء المستهدفين.</p>
+                        <ul class="service-features">
+                            <li><i class="fa-solid fa-check"></i> تحليل وفحص الكلمات المفتاحية</li>
+                            <li><i class="fa-solid fa-check"></i> تحسين البنية البرمجية والسرعة</li>
+                            <li><i class="fa-solid fa-check"></i> بناء روابط داخلية وخارجية قوية</li>
+                        </ul>
+                    </div>
+
+                    <div class="service-card">
+                        <div class="service-icon"><i class="fa-solid fa-gears"></i></div>
+                        <h3 class="service-title">صيانة وتطوير المواقع</h3>
+                        <p class="service-desc">تحديث وصيانة المواقع القائمة وحل المشكلات البرمجية، بالإضافة إلى إضافة ميزات وتعديلات جديدة.</p>
+                        <ul class="service-features">
+                            <li><i class="fa-solid fa-check"></i> دعم فني دوري ومستمر</li>
+                            <li><i class="fa-solid fa-check"></i> إصلاح الأخطاء وتحديث الحماية</li>
+                            <li><i class="fa-solid fa-check"></i> تحسين سرعة وأداء الموقع</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Portfolio Section -->
+        <section id="portfolio" class="portfolio-section">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-badge">معرض أعمالنا</span>
+                    <h2 class="section-title">فخورون بالمشاريع التي قمنا بإنجازها</h2>
+                    <p class="section-desc">نماذج من آخر أعمالنا التي صممت وطورت بحب ودقة متناهية لتلبية رغبات شركائنا.</p>
+                    <div class="portfolio-filters">
+                        <button class="filter-btn active" data-filter="all">الكل</button>
+                        <button class="filter-btn" data-filter="website">مواقع تعريفية</button>
+                        <button class="filter-btn" data-filter="store">متاجر إلكترونية</button>
+                        <button class="filter-btn" data-filter="webapp">تطبيقات ويب</button>
+                    </div>
+                </div>
+                <div class="portfolio-grid">
+                    <!-- Project 1 -->
+                    <div class="portfolio-item" data-category="store">
+                        <div class="portfolio-img-wrapper">
+                            <img src="images/project_perfume.jpg" alt="متجر ريفان للعطور الفاخرة">
+                            <div class="portfolio-overlay">
+                                <h3 class="project-title">متجر ريفان للعطور الفاخرة</h3>
+                                <span class="project-category">متجر إلكتروني</span>
+                                <a href="#contact" class="project-link"><i class="fa-solid fa-arrow-up-right-from-square"></i> طلب مشروع مماثل</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 2 -->
+                    <div class="portfolio-item" data-category="website">
+                        <div class="portfolio-img-wrapper">
+                            <img src="images/project_realestate.jpg" alt="موقع شركة أركان العقارية">
+                            <div class="portfolio-overlay">
+                                <h3 class="project-title">موقع شركة أركان العقارية</h3>
+                                <span class="project-category">موقع تعريفي</span>
+                                <a href="#contact" class="project-link"><i class="fa-solid fa-arrow-up-right-from-square"></i> طلب مشروع مماثل</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 3 -->
+                    <div class="portfolio-item" data-category="webapp">
+                        <div class="portfolio-img-wrapper">
+                            <img src="images/project_taskapp.jpg" alt="منصة إنجاز لإدارة وتتبع المهام">
+                            <div class="portfolio-overlay">
+                                <h3 class="project-title">منصة إنجاز لإدارة وتتبع المهام</h3>
+                                <span class="project-category">تطبيق ويب</span>
+                                <a href="#contact" class="project-link"><i class="fa-solid fa-arrow-up-right-from-square"></i> طلب مشروع مماثل</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 4 -->
+                    <div class="portfolio-item" data-category="website">
+                        <div class="portfolio-img-wrapper">
+                            <img src="images/project_restaurant.jpg" alt="موقع وتطبيق مطعم أوريغانو الإيطالي">
+                            <div class="portfolio-overlay">
+                                <h3 class="project-title">موقع وتطبيق مطعم أوريغانو الإيطالي</h3>
+                                <span class="project-category">موقع تعريفي</span>
+                                <a href="#contact" class="project-link"><i class="fa-solid fa-arrow-up-right-from-square"></i> طلب مشروع مماثل</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Why Choose Us Section -->
+        <section id="why-us" class="why-us-section">
+            <div class="container">
+                <div class="why-us-content">
+                    <span class="section-badge">لماذا تختارنا؟</span>
+                    <h2 class="section-title">نحن لا نصمم مجرد مواقع، نحن نبني هويتك الرقمية</h2>
+                    <p class="section-desc">نهتم بأدق التفاصيل لنضمن خروج موقعك الإلكتروني بأفضل صورة ممكنة تليق بعملك وتساهم في تحقيق أهدافك التجارية.</p>
+                    
+                    <div class="features-list">
+                        <div class="feature-item">
+                            <div class="feature-icon"><i class="fa-solid fa-bolt"></i></div>
+                            <div class="feature-text">
+                                <h4>سرعة فائقة وأداء مثالي</h4>
+                                <p>نهتم بتهيئة الكود البرمجي وضغط الملفات لضمان تصفح سريع وسلس لموقعك على كل الأجهزة.</p>
+                            </div>
+                        </div>
+
+                        <div class="feature-item">
+                            <div class="feature-icon"><i class="fa-solid fa-mobile-screen-button"></i></div>
+                            <div class="feature-text">
+                                <h4>متجاوب مع كافة الشاشات</h4>
+                                <p>يتم تصميم المواقع لتتناسب تلقائياً مع أحجام شاشات الجوال، التابلت، والكمبيوتر المكتبي.</p>
+                            </div>
+                        </div>
+
+                        <div class="feature-item">
+                            <div class="feature-icon"><i class="fa-solid fa-chart-line"></i></div>
+                            <div class="feature-text">
+                                <h4>صديق لمحركات البحث SEO</h4>
+                                <p>نلتزم بالمعايير التقنية وممارسات SEO النظيفة ليصبح موقعك مؤهلاً للتصدر في جوجل بكل سهولة.</p>
+                            </div>
+                        </div>
+
+                        <div class="feature-item">
+                            <div class="feature-icon"><i class="fa-solid fa-shield-halved"></i></div>
+                            <div class="feature-text">
+                                <h4>أمان عالي ودعم مستمر</h4>
+                                <p>حماية بياناتك وبيانات عملائك هي أولويتنا، مع توفير دعم فني متواصل لحل أي مشاكل فنية قد تواجهها.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="why-us-visual">
+                    <div class="experience-card">
+                        <div class="exp-circle">
+                            <span class="exp-num">100%</span>
+                            <span class="exp-text">إتقان وجودة</span>
+                        </div>
+                        <div class="exp-badges">
+                            <span class="exp-badge-item"><i class="fa-solid fa-award"></i> كود نظيف ومعياري</span>
+                            <span class="exp-badge-item"><i class="fa-solid fa-clock"></i> التزام دقيق بالمواعيد</span>
+                            <span class="exp-badge-item"><i class="fa-solid fa-heart"></i> دعم فني متميز</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact-section">
+            <div class="container">
+                <div class="contact-grid">
+                    <div class="contact-info">
+                        <span class="section-badge">تواصل معنا</span>
+                        <h2 class="section-title">دعنا نناقش مشروعك القادم</h2>
+                        <p class="section-desc">هل لديك فكرة أو مشروع تود البدء فيه؟ املأ النموذج أو تواصل معنا عبر إحدى قنوات الاتصال وسنقوم بالرد عليك في غضون 24 ساعة.</p>
+                        
+                        <div class="info-items">
+                            <div class="info-item">
+                                <span class="info-icon"><i class="fa-solid fa-envelope"></i></span>
+                                <div class="info-text">
+                                    <span>البريد الإلكتروني</span>
+                                    <a href="mailto:hamminori6@gmail.com">hamminori6@gmail.com</a>
+                                </div>
+                            </div>
+                            <div class="info-item">
+                                <span class="info-icon"><i class="fa-solid fa-phone"></i></span>
+                                <div class="info-text">
+                                    <span>الهاتف</span>
+                                    <a href="tel:+213669371261">+213 669 37 12 61</a>
+                                </div>
+                            </div>
+                            <div class="info-item">
+                                <span class="info-icon"><i class="fa-brands fa-whatsapp"></i></span>
+                                <div class="info-text">
+                                    <span>واتساب مباشر</span>
+                                    <a href="https://wa.me/213669371261" target="_blank">تواصل عبر واتساب</a>
+                                </div>
+                            </div>
+                            <div class="info-item">
+                                <span class="info-icon"><i class="fa-solid fa-location-dot"></i></span>
+                                <div class="info-text">
+                                    <span>العنوان</span>
+                                    <p>حي العمراني الجديد، ونزة، ولاية تبسة</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="social-links">
+                            <a href="#" class="social-icon" aria-label="X (تويتر سابقاً)"><i class="fa-brands fa-x-twitter"></i></a>
+                            <a href="#" class="social-icon" aria-label="لينكد إن"><i class="fa-brands fa-linkedin-in"></i></a>
+                            <a href="#" class="social-icon" aria-label="إنستغرام"><i class="fa-brands fa-instagram"></i></a>
+                            <a href="#" class="social-icon" aria-label="فيسبوك"><i class="fa-brands fa-facebook-f"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="contact-form-card">
+                        <h3>أرسل تفاصيل مشروعك</h3>
+                        <form id="projectContactForm" novalidate>
+                            <div class="form-group">
+                                <label for="userName">الاسم الكامل <span class="required">*</span></label>
+                                <div class="input-wrapper">
+                                    <i class="fa-regular fa-user"></i>
+                                    <input type="text" id="userName" name="name" placeholder="أدخل اسمك الكريم" required>
+                                </div>
+                                <span class="error-msg" id="nameError">الرجاء إدخال الاسم بشكل صحيح</span>
+                            </div>
+
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="userEmail">البريد الإلكتروني <span class="required">*</span></label>
+                                    <div class="input-wrapper">
+                                        <i class="fa-regular fa-envelope"></i>
+                                        <input type="email" id="userEmail" name="email" placeholder="example@domain.com" required>
+                                    </div>
+                                    <span class="error-msg" id="emailError">الرجاء إدخال بريد إلكتروني صالح</span>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="userPhone">رقم الجوال <span class="required">*</span></label>
+                                    <div class="input-wrapper">
+                                        <i class="fa-solid fa-mobile-screen"></i>
+                                        <input type="tel" id="userPhone" name="phone" placeholder="05xxxxxxxx" required>
+                                    </div>
+                                    <span class="error-msg" id="phoneError">الرجاء إدخال رقم جوال صحيح</span>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="projectType">نوع المشروع <span class="required">*</span></label>
+                                <div class="input-wrapper">
+                                    <i class="fa-solid fa-layer-group"></i>
+                                    <select id="projectType" name="projectType" required>
+                                        <option value="" disabled selected>اختر نوع الموقع المطلوب</option>
+                                        <option value="website">موقع تعريفي للشركة</option>
+                                        <option value="store">متجر إلكتروني متكامل</option>
+                                        <option value="landing">صفحة هبوط (Landing Page)</option>
+                                        <option value="other">تطوير / صيانة موقع قائم</option>
+                                    </select>
+                                </div>
+                                <span class="error-msg" id="projectTypeError">الرجاء اختيار نوع المشروع</span>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="userMessage">تفاصيل المشروع <span class="required">*</span></label>
+                                <div class="input-wrapper textarea-wrapper">
+                                    <i class="fa-regular fa-comment-dots"></i>
+                                    <textarea id="userMessage" name="message" rows="4" placeholder="اكتب نبذة عن موقعك المطلوب، والصفحات أو المميزات الهامة..." required></textarea>
+                                </div>
+                                <span class="error-msg" id="messageError">الرجاء كتابة تفاصيل المشروع (على الأقل 10 أحرف)</span>
+                            </div>
+
+                            <button type="submit" class="btn btn-primary btn-block" id="submitFormBtn">
+                                <span>إرسال الطلب</span> <i class="fa-solid fa-paper-plane"></i>
+                            </button>
+
+                            <div class="form-status" id="formStatus"></div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col brand-col">
+                    <a href="#" class="footer-logo">
+                        <i class="fa-solid fa-code"></i> إبداع<span>ويب</span>
+                    </a>
+                    <p class="footer-desc">نصمم ونصنع هويات رقمية متميزة تخدم أهدافك وتبرز قوة علامتك التجارية عبر تصاميم فريدة وأكواد برمجية معيارية.</p>
+                </div>
+                <div class="footer-col links-col">
+                    <h3>روابط سريعة</h3>
+                    <ul>
+                        <li><a href="#hero"><i class="fa-solid fa-angle-left"></i> الرئيسية</a></li>
+                        <li><a href="#services"><i class="fa-solid fa-angle-left"></i> خدماتنا</a></li>
+                        <li><a href="#portfolio"><i class="fa-solid fa-angle-left"></i> أعمالنا</a></li>
+                        <li><a href="#why-us"><i class="fa-solid fa-angle-left"></i> لماذا نحن؟</a></li>
+                        <li><a href="#contact"><i class="fa-solid fa-angle-left"></i> اتصل بنا</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col services-col">
+                    <h3>خدماتنا</h3>
+                    <ul>
+                        <li><a href="#services"><i class="fa-solid fa-angle-left"></i> تصميم المواقع</a></li>
+                        <li><a href="#services"><i class="fa-solid fa-angle-left"></i> المتاجر الإلكترونية</a></li>
+                        <li><a href="#services"><i class="fa-solid fa-angle-left"></i> تهيئة محركات البحث (SEO)</a></li>
+                        <li><a href="#services"><i class="fa-solid fa-angle-left"></i> الصيانة والدعم الفني</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 إبداع ويب. جميع الحقوق محفوظة.</p>
+                <p class="developer-tag">تم التطوير بكل حب وإبداع بواسطة <a href="#">إبداع ويب</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Main JavaScript File -->
+    <script src="script.js"></script>
+</body>
+</html>
